@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/c242612858.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <img src="images/abi-logo.png" class="logo" alt="Logo" />
+    <i class="fa-solid fa-bars" id="menu-toggle" onclick="toggleMenu()"></i>
+    <ul id="sidemenu">
+      <i class="fa-solid fa-circle-xmark" id="menu-close" onclick="toggleMenu()"></i>
+      <li><a href="#header">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <div id="header">
+    <div class="container">
+      <div class="header-text">
+        <p>Full Stack Developer</p>
+        <h1>Hi, this is <span>Abishek</span><br>from <span>Chennai</span></h1>
+      </div>
+    </div>
+  </div>
+  <!------------------------About------------------------------->
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/me/Laptop.png" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="Sub-title">About me</h1>
+                <p>Motivated Full Stack Developer skilled in HTML, CSS, JavaScript, React and databases (MySQL, MongoDB).
+                Familiar with version control systems like Git and cloud platforms such as AWS. Eager to apply theoreticalknowledge
+                and hands-on experience gained through project to develop scalable, efficient, and user-friendly webapplications.
+                Excited to leverage my skills in a dynamic development environment to contribute and grow.</p>
+                   <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('certificates')">Certificates</p>
+                    <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                   <div class="tab-contents active-tab" id="skills">
+                    <ul id="skills-list">
+                      <li><span>Programming</span><br>Java,Python</li>
+                      <li><span>Web Development</span><br>HTML, CSS, JavaScript,React</li>
+                      <li><span>Database Management</span><br>MySQL,MongoDB</li>
+                      <li><span>Frameworks & Platforms</span><br>Pega CSA, CSSA</li>
+                    </ul>
+                   </div>
+                   <!-- <div class="tab-contents" id="experience">
+                    <ul>
+                      <li><span>Frontend</span><br>web designing</li>
+                      <li><span>backend</span><br>desingindb</li>
+                      <li><span>app deveops</span><br>web app</li>
+                    </ul>
+                   </div> -->
+                   <div class="tab-contents" id="certificates">
+                    <ul>
+                      <li><span>Guvi</span><br>Guvi Full Stack</li>
+                      <li><span>pega</span><br>Certified Pega Senior System Architect</li>
+                      <li><span>NetAcad</span><br>Programming Essentials in Python</li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="education">
+                    <ul>
+                      <li><span>B.Tech-Information Technology</span><br>2020 – 2024 <br>Chennai Institute of Technology<br>Relevant Coursework: Software Development, Cloud Computing, 
+                        System Architecture, Database Management Systems </li>
+                      
+                    </ul>
+                   </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- -------------------------------services--------------------- -->
+   <div id="services">
+    <div class="container">
+      <h1 class="Sub-title">My services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Full Stack Development</h2>
+          <p>Building responsive, dynamic web applications using HTML, CSS, JavaScript, React, Java, and databases like MySQL and MongoDB.</p>
+          <!-- <a href="#">Learn more</a>           -->
+        </div>
+        <div>
+          <i class="fa-solid fa-object-group"></i>
+          <h2>UI/UX Design</h2>
+          <p>Designing clean and user-friendly interfaces with a focus on usability, responsiveness, and visual appeal using modern web standards.</p>
+          <!-- <a href="#">Learn more</a>           -->
+        </div>
+        <div>
+          <i class="fa-solid fa-database"></i>
+          <h2>Database Integration</h2>
+          <p>Creating and managing relational and NoSQL databases, integrating backend services to ensure smooth data operations and performance.</p>
+          <!-- <a href="#">Learn more</a>           -->
+        </div>
+      </div>
+
+    </div>
+   </div>
+  <!-- ------------------------------------- Portfolio------------------------------------- -->
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="Sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/Projects/Personal Porfolio webdesign.png">
+          <div class="layer">
+            <h3>Personal Porfolio</h3>
+            <p>This is Figma design for building this portfolio your're seeing</p>
+            <a href="https://www.figma.com/proto/WTlWPcxXnZfjVK30qJHDUf/Personal-portfolio?node-id=0-1&t=7hIAxO0yT3VuxbkJ-1" target="_blank"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/Projects/Calculator.png" >
+          <div class="layer">
+            <h3>Calculator</h3>
+            <p>A mini project to build a calculator only using DOM elements</p>
+            <a href="https://abishek0724.github.io/miniProject/" target="_blank"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/Projects/To-Do-List.png">
+          <div class="layer">
+            <h3>To-DO List</h3>
+            <p>Tried to build a Todo list to keep the track of my work</p>
+            <a href="https://abishek0724.github.io/To-Do-List/" target="_blank"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+  <!-- -----------------------------contact---------------------- -->
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+          <h1 class="Sub-title">Contact me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> palaniabishek24@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +91 9345291156</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+         <a href="Abishek-P-IT.pdf" target="_blank"  class="btn btn2">Resume</a>
+
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet" >
+          <input type="text" name="name" placeholder="your name" required>
+          <input type="email" name="email" placeholder="your email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const menuClose = document.getElementById("menu-close");
+  const sidemenu = document.getElementById("sidemenu");
+
+  function toggleMenu() {
+    if (sidemenu.style.right === "0px") {
+      sidemenu.style.right = "-200px";
+    } else {
+      sidemenu.style.right = "0px";
+    }
+  }
+
+  const tablinks = document.getElementsByClassName("tab-links");
+  const tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname) {
+    for (let tablink of tablinks) {
+      tablink.classList.remove("active-link");
+    }
+    for (let tabcontent of tabcontents) {
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwZaqXL65A7Zyn3FPuWnJqGqNOFK-_1N455qXL2-SijCiRuWtPpS8xfQ1X-Lwfg4SKI/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>{
+        msg.innerHTML="Message Sent Sucessfully"
+        setTimeout(function(){
+          msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+</body>
+</html>
